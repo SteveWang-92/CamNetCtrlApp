@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CamNetCtrlWidget</class>
+ <widget class="QWidget" name="CamNetCtrlWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1500</width>
+    <height>830</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CamNetCtrlWidget</string>
+  </property>
+  <widget class="QWidget" name="widgetText" native="true">
+   <property name="geometry">
+    <rect>
+     <x>1300</x>
+     <y>60</y>
+     <width>161</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="5" column="0">
+     <widget class="QLineEdit" name="textPort"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLineEdit" name="textHostIP"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="labelHostIP">
+      <property name="text">
+       <string>本机IP:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLineEdit" name="textHostName"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="labelPort">
+      <property name="text">
+       <string>监听端口:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="labelHostName">
+      <property name="text">
+       <string>主机名:</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="widgetButton" native="true">
+   <property name="geometry">
+    <rect>
+     <x>1300</x>
+     <y>410</y>
+     <width>161</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QPushButton" name="ButtonStartUp">
+      <property name="text">
+       <string>启动服务器</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="ButtonShut">
+      <property name="text">
+       <string>关闭服务器</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="ButtonQuit">
+      <property name="text">
+       <string>退出</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="ButtonClear">
+      <property name="text">
+       <string>清空列表</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTableView" name="tViewTmpdb">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>1225</width>
+     <height>741</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="textElideMode">
+    <enum>Qt::ElideLeft</enum>
+   </property>
+   <property name="horizontalScrollMode">
+    <enum>QAbstractItemView::ScrollPerPixel</enum>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>1300</x>
+     <y>300</y>
+     <width>161</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QLabel" name="labelTimeinterval">
+      <property name="text">
+       <string>数据存储时间间隔:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QComboBox" name="comBoxTimeinterval"/>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
